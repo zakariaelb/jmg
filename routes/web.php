@@ -35,3 +35,9 @@ Route::get('/test', 'TestController@index')->name('test');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+################### Users route ############################
+
+Route::get('/expenses', 'Users\CrudController@getExpenses')->name('expenses');
+
+################### End Landing route ########################

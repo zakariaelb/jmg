@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="Second">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Expiration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Notify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/NotifyUserByMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Expense.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/mailuser.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Expiration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Expiration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Notify.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Notify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,12 +161,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/emails" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\app\Models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\resources\views\emails" />
       <recent name="C:\laragon\www\jmg\app\Http\Controllers" />
       <recent name="C:\laragon\www\jmg\resources\views" />
       <recent name="C:\laragon\www\jmg\resources\views\layouts" />
@@ -185,6 +193,8 @@
       <updated>1605184252396</updated>
       <workItem from="1605184253838" duration="6502000" />
       <workItem from="1605422839182" duration="18951000" />
+      <workItem from="1605506904662" duration="582000" />
+      <workItem from="1605508227168" duration="10226000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1605447181813</created>
@@ -209,6 +219,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -249,5 +260,16 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605424527936" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/emails/mailuser.blade.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

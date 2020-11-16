@@ -2,8 +2,10 @@
 
 namespace App\Console\Commands;
 
+use App\Mail\NotifyUserByMail;
 use App\User;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Mail;
 
 class Notify extends Command
 {
@@ -12,7 +14,7 @@ class Notify extends Command
      *
      * @var string
      */
-    protected $signature = 'notify:email';
+    protected $signature = 'Notify:email';
 
     /**
      * The console command description.
@@ -39,11 +41,11 @@ class Notify extends Command
     public function handle()
     {
         //$user = User::select('email')->get();
-        $emails = User::pluck('email')->toArrau();
+        $emails = User::pluck('email')->toArray();
+        $data=['title'=> 'Prog', 'body'=> 'php'];
         foreach($emails as $email){
             //how to send email
-
+            Mail::to($email) ->send(new NotifyUserByMail($data));
         }
-
     }
 }
