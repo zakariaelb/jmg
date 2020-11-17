@@ -19,16 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="Second">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mail/NotifyUserByMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Expense.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/mailuser.blade.php" afterDir="false" />
+    <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="crud">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jmg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jmg.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Expiration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Expiration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Notify.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Notify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Expense.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,22 +156,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/emails" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/expenses" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\jmg\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\resources\views\expenses" />
       <recent name="C:\laragon\www\jmg\resources\views\emails" />
       <recent name="C:\laragon\www\jmg\app\Http\Controllers" />
       <recent name="C:\laragon\www\jmg\resources\views" />
       <recent name="C:\laragon\www\jmg\resources\views\layouts" />
-      <recent name="C:\laragon\www\jmg\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -194,7 +193,8 @@
       <workItem from="1605184253838" duration="6502000" />
       <workItem from="1605422839182" duration="18951000" />
       <workItem from="1605506904662" duration="582000" />
-      <workItem from="1605508227168" duration="10226000" />
+      <workItem from="1605508227168" duration="12103000" />
+      <workItem from="1605593741695" duration="7281000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1605447181813</created>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605447181813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="crud">
+      <created>1605538879274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605538879274</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +232,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fist" />
     <MESSAGE value="Second" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second" />
+    <MESSAGE value="crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1605447126497">
@@ -252,10 +260,14 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605433227992" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605452515782">
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605538881908">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605452515782" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605538881908" />
+    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605538857016">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605538857016" />
     <state x="1705" y="162" key="run.anything.popup" timestamp="1605424527936">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>

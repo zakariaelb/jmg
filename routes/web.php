@@ -41,3 +41,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/expenses', 'Users\CrudController@getExpenses')->name('expenses');
 
 ################### End Landing route ########################
+################### Crud route ############################
+
+Route::group(['prefix'=>'input'], function(){
+    Route::get('store', 'Users\CrudController@store');
+    Route::get('create', 'Users\CrudController@create')->name('creating');
+    Route::post('save', 'Users\CrudController@save')->name('expense.saving');
+
+});
+################### Create route ############################
+
