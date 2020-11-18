@@ -93,14 +93,23 @@
                     <div class="form-group">
                         <label for="InputDate">Date</label>
                         <input type="Date" name="date" class="form-control" id="dateID" placeholder="Date">
+                        @error('date')
+                        <small class="form-text text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="InputReceiptVoucherNumber">Receipt voucher number</label>
-                        <input type="number" name="receipt_voucher_number" class="form-control" id="InputReceiptVoucherNumber" aria-describedby="InputReceiptVoucherNumber" placeholder="Voucher number">
+                        <input type="TEXT" name="receipt_voucher_number" class="form-control" id="InputReceiptVoucherNumber" aria-describedby="InputReceiptVoucherNumber" placeholder="Voucher number">
+                        @error('receipt_voucher_number')
+                        <small class="form-text text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="InputAmountr">Amount</label>
-                        <input type="number" step="0.01" name="amount" class="form-control" id="InputamountID" aria-describedby="InputReceiptVoucherNumber" placeholder="Voucher number">
+                        <input type="TEXT" name="amount" class="form-control" id="InputamountID" aria-describedby="InputReceiptVoucherNumber" placeholder="Amount">
+                        @error('amount')
+                        <small class="form-text text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="form-check">
                     <button type="submit" class="btn btn-primary">Submit</button>
