@@ -18,4 +18,25 @@ return [
     'numericRequired' => 'يجب أن تكون القيمة رقمية',
     'alreadyExists' => 'رقم موجود',
     'amountRequired' => 'المرجو إدخال المبلغ',
+    'AddNewExpense' => 'إضافة مصاريف جديدة',
+    'Date' => 'التاريخ',
+    'dateFormat' => 'يي/شش/سسسس',
+    'VoucherNumber' => 'رقم السند',
+    'paymentVoucherNumber' => 'رقم سند الصرف',
+    'Amount' => 'المبلغ',
+    'save' => 'حفظ',
+    'name' => 'الاسم بالإنجليزي',
+    'sponsorName' => 'اسم الكفيل بالإنجليزي',
+    'serviceName' => 'اسم الخدمة بالإنجليزي',
+    'nameAR' => 'الاسم بالعربية ',
+    'sponsorNameAR' => 'اسم الكفيل بالعربية',
+    'serviceNameAR' => 'اسم الخدمةبالعربية',
+    'operation' => 'عملية',
+    'Edit' => 'تحديث',
+    'editExpense' => 'تحديث مصاريف',
+    'Photo' => 'ملف',
+
+
+
+
 ];

@@ -7,7 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Expense extends Model
 {
     protected $table = "expenses";
-    protected $fillable=['amount','receipt_voucher_number','created_at','updated_at','date'];
+    protected $fillable=['id','amount','receipt_voucher_number','created_at','updated_at','date',
+                        'sponsor_name_English',
+                        'sponsor_name_Arabic',
+                        'name_English',
+                        'name_Arabic',
+                        'service_name_English',
+                        'photo',
+                        'images',
+                        'service_name_Arabic'
+                                        ];
     protected $hidden=[];
     public $timestamps = true;
 }

@@ -18,4 +18,23 @@ return [
     'numericRequired' => 'The value must be numeric',
     'alreadyExists' => 'Already exists',
     'amountRequired' => 'The amount value is required',
+    'AddNewExpense' => 'Add New Expense',
+    'Date' => 'Date',
+    'dateFormat' => 'dd/mm/yyyy',
+    'VoucherNumber' => 'Voucher Number',
+    'paymentVoucherNumber' => 'Payment Voucher Number',
+    'Amount' => 'Amount',
+    'name' => 'Name In English',
+    'sponsorName' => 'Sponsor Name In English',
+    'serviceName' => 'Service Name In English',
+    'nameAR' => 'Name In Arabic',
+    'sponsorNameAR' => 'Sponsor Name In Arabic',
+    'serviceNameAR' => 'Service Name In Arabic',
+    'operation' => 'Operation',
+    'Edit' => 'Update',
+    'Photo' => 'File',
+    'save' => 'Save',
+    'editExpense' => 'Edit Expense',
+
+
 ];

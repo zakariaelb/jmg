@@ -19,13 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="saved">
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+    <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="ar">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/inputRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/updatingRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/ExpesnesTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/ExpesnesTraitMultiple.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/laravellocalization.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1606227828.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/expenses/allExpenses.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/expenses/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jmg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jmg.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Expense.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +161,9 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kBqIPUINGMyDPoSmBauvEvAy0T" />
@@ -159,20 +180,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Traits" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\jmg\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\app\Traits" />
+      <recent name="C:\laragon\www\jmg\app\Http\Requests" />
+      <recent name="C:\laragon\www\jmg\resources\views\expenses" />
       <recent name="C:\laragon\www\jmg\resources\lang\en" />
       <recent name="C:\laragon\www\jmg\resources\lang\ar" />
-      <recent name="C:\laragon\www\jmg\resources\views\expenses" />
-      <recent name="C:\laragon\www\jmg\resources\views\emails" />
-      <recent name="C:\laragon\www\jmg\app\Http\Controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -194,7 +215,11 @@
       <workItem from="1605506904662" duration="582000" />
       <workItem from="1605508227168" duration="12103000" />
       <workItem from="1605593741695" duration="14519000" />
-      <workItem from="1605682732578" duration="4021000" />
+      <workItem from="1605682732578" duration="22250000" />
+      <workItem from="1605766437079" duration="21913000" />
+      <workItem from="1606025027479" duration="6235000" />
+      <workItem from="1606111502194" duration="8445000" />
+      <workItem from="1606197889262" duration="13132000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1605447181813</created>
@@ -217,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605604635958</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ar">
+      <created>1605690472349</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605690472349</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,9 +273,14 @@
     <MESSAGE value="Second" />
     <MESSAGE value="crud" />
     <MESSAGE value="saved" />
-    <option name="LAST_COMMIT_MESSAGE" value="saved" />
+    <MESSAGE value="ar" />
+    <option name="LAST_COMMIT_MESSAGE" value="ar" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605781908854">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605781908854" />
     <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1605447126497">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -268,18 +305,26 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605433227992" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605604637537">
+    <state x="1883" y="287" key="NewPhpFileDialog" timestamp="1606226756154">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605604637537" />
-    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605538857016">
+    <state x="1883" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606226756154" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606059627652">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605538857016" />
-    <state x="1705" y="162" key="run.anything.popup" timestamp="1605424527936">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606059627652" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605690505315">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605424527936" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605690505315" />
+    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605690441190">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605690441190" />
+    <state x="1705" y="162" key="run.anything.popup" timestamp="1606027328203">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606027328203" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
