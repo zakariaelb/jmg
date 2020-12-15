@@ -20,30 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="ar">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/inputRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/updatingRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/ExpesnesTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/ExpesnesTraitMultiple.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/laravellocalization.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1606227828.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/expenses/allExpenses.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/expenses/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jmg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jmg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/ExpensesTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_111804_create_jmgexpenses_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_15_08_111804_create_expenses_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608029007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608029242.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608029327.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038205.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038260.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038276.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038582.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038817.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038856.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038924.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Expense.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Traits/ExpesnesTrait.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,19 +170,19 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Traits" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\database\migrations" />
       <recent name="C:\laragon\www\jmg\app\Traits" />
       <recent name="C:\laragon\www\jmg\app\Http\Requests" />
       <recent name="C:\laragon\www\jmg\resources\views\expenses" />
       <recent name="C:\laragon\www\jmg\resources\lang\en" />
-      <recent name="C:\laragon\www\jmg\resources\lang\ar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\jmg\app\Models" />
@@ -220,6 +212,18 @@
       <workItem from="1606025027479" duration="6235000" />
       <workItem from="1606111502194" duration="8445000" />
       <workItem from="1606197889262" duration="13132000" />
+      <workItem from="1606283871943" duration="591000" />
+      <workItem from="1606287830458" duration="591000" />
+      <workItem from="1606289804619" duration="628000" />
+      <workItem from="1607409291841" duration="103000" />
+      <workItem from="1607409810822" duration="2392000" />
+      <workItem from="1607414866133" duration="5813000" />
+      <workItem from="1607496285021" duration="2197000" />
+      <workItem from="1607855754745" duration="6854000" />
+      <workItem from="1607863800096" duration="2702000" />
+      <workItem from="1607927216263" duration="6980000" />
+      <workItem from="1608018536774" duration="4134000" />
+      <workItem from="1608028462161" duration="4465000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1605447181813</created>
@@ -277,18 +281,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="ar" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1692" y="105" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608038809750">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1692" y="105" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608038809750" />
     <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605781908854">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605781908854" />
-    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1605447126497">
+    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1607409838252">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605447126497" />
+    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607409838252" />
     <state x="1495" y="55" key="DiffContextDialog" timestamp="1605446834534">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1495" y="55" key="DiffContextDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605446834534" />
+    <state x="1829" y="106" key="FileChooserDialogImpl" timestamp="1608021914899">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1829" y="106" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608021914899" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1605433227992">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -309,18 +321,22 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1883" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606226756154" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606059627652">
+    <state x="1550" y="9" key="SettingsEditor" timestamp="1607412448460">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606059627652" />
+    <state x="1550" y="9" key="SettingsEditor/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607412448460" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607856714196">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607856714196" />
     <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605690505315">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605690505315" />
-    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605690441190">
+    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608021948370">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605690441190" />
+    <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608021948370" />
     <state x="1705" y="162" key="run.anything.popup" timestamp="1606027328203">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>

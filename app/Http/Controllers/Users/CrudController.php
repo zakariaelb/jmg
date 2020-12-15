@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\inputRequest;
 use App\Http\Requests\updatingRequest;
 use App\Models\Expense;
-use App\Traits\ExpesnesTrait;
+use App\Traits\ExpensesTrait;
 use App\Traits\ExpesnesTraitMultiple;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -15,7 +15,7 @@ use function Symfony\Component\String\s;
 
 class CrudController extends Controller
 {
-    use ExpesnesTrait;
+    use ExpensesTrait;
     //
     public function __construct()
     {
@@ -44,7 +44,6 @@ class CrudController extends Controller
     public function save(inputRequest $request)
     {
         //Validator
-
         /**$rules = $this -> getRules();
         //$messages = $this -> getMessages();
         //$validator = Validator::make($request->all(),$rules,$messages);
@@ -119,7 +118,7 @@ class CrudController extends Controller
         return view('expenses.allExpenses',compact('expenses'));
     }
     public function editExpenses($id_Expenses)  {
-                //Expense::findOrFail($id_Expenses);
+                //Jmgexpense::findOrFail($id_Expenses);
         $id_Exp =  Expense::find($id_Expenses);
         if(!$id_Exp)
         return redirect() -> back() ;
@@ -138,8 +137,6 @@ class CrudController extends Controller
             'service_name_Arabic')-> find($id_Expenses);
         return view('expenses.edit',compact('id_Exp'));
     }
-
-
     public function update(updatingRequest $request, $id_Expenses){
                 //Validation ::
 
@@ -177,5 +174,4 @@ class CrudController extends Controller
 
             return redirect() ->back() -> with(['success' => 'Okay UPDATE']);
         }
-
 }
