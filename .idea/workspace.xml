@@ -20,22 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="ar">
-      <change afterPath="$PROJECT_DIR$/app/Traits/ExpensesTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_111804_create_jmgexpenses_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_15_08_111804_create_expenses_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608029007.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608029242.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608029327.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038205.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038260.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038276.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038582.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038817.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038856.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608038924.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608039004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608106944.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608107184.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608210080.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608210117.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608210161.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608211098.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1608212272.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/CrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Traits/ExpesnesTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/expenses/allExpenses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/allExpenses.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +222,9 @@
       <workItem from="1607863800096" duration="2702000" />
       <workItem from="1607927216263" duration="6980000" />
       <workItem from="1608018536774" duration="4134000" />
-      <workItem from="1608028462161" duration="4465000" />
+      <workItem from="1608028462161" duration="5103000" />
+      <workItem from="1608100599066" duration="3737000" />
+      <workItem from="1608186560611" duration="7197000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1605447181813</created>
@@ -253,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605690472349</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="image">
+      <created>1608039777575</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608039777575</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +286,8 @@
     <MESSAGE value="crud" />
     <MESSAGE value="saved" />
     <MESSAGE value="ar" />
-    <option name="LAST_COMMIT_MESSAGE" value="ar" />
+    <MESSAGE value="image" />
+    <option name="LAST_COMMIT_MESSAGE" value="image" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1692" y="105" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608038809750">
@@ -289,10 +298,10 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605781908854" />
-    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1607409838252">
+    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1608039774461">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607409838252" />
+    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608039774461" />
     <state x="1495" y="55" key="DiffContextDialog" timestamp="1605446834534">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -329,10 +338,10 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607856714196" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605690505315">
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608039786947">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605690505315" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608039786947" />
     <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608021948370">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>

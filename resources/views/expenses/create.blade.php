@@ -185,9 +185,15 @@
                         @enderror
                     </div>
 
-
                     <div class="form-check">
-                    <button type="submit" class="btn btn-primary">{{__('messages.save')}}</button>
+                    <button type="submit" class="btn btn-primary mt-2"  >{{__('messages.save')}}</button>
+                    </div>
+                    @if(Session::has('success'))
+                        <div class="alert alert-success" role="alert">
+                            {{ Session::get('success') }}
+                        </div>
+                    @endif
+
                 </form>
             </div>
         </div>

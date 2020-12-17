@@ -70,9 +70,9 @@ class CrudController extends Controller
         ]);
 
         return redirect()->back()->with(['success' =>'OKAY']);
+
         //return redirect()->back()->withErrors($validator)->withInput($request->all());
     }
-
 /*
     protected function getRules(){
         return $rules = [
@@ -94,6 +94,7 @@ class CrudController extends Controller
 */
             public function allExpenses(){
             $expenses = Expense::select('id','amount',
+                'photo',
                 'receipt_voucher_number',
                 'created_at',
                 'updated_at',
@@ -108,6 +109,7 @@ class CrudController extends Controller
             }
     public function getAllExpenses(){
         $expenses = Expense::select('id','amount',
+            'photo',
             'receipt_voucher_number',
             'created_at',
             'updated_at',
@@ -173,5 +175,17 @@ class CrudController extends Controller
         'service_name_Arabic'=> $request->service_name_Arabic]);
 
             return redirect() ->back() -> with(['success' => 'Okay UPDATE']);
+        }
+        public function delete($id_Expenses){
+        //Check if exists
+            $Expense = Expense::find($id_Expenses);
+            if (!$Expense)
+                return redirect()->back() -> with(['error'=> __('messages.Not exist')]);
+
+            $Expense -> delete();
+
+            return redirect()
+                ->route('expense.all')
+                ->with(['success' => __('messages.delete OK')]);
         }
 }

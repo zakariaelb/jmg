@@ -90,6 +90,16 @@
             </form>
         </div>
     </nav>
+    @if(Session::has('success'))
+        <div class="alert alert-success">
+            {{Session::get('success')}}
+        </div>
+        @endif
+    @if(Session::has('error'))
+        <div class="alert alert-danger">
+            {{Session::get('error')}}
+        </div>
+    @endif
                     <table class="table">
                         <thead>
                         <tr>
@@ -100,7 +110,9 @@
                             <th scope="col">{{__('messages.sponsorName')}}</th>
                             <th scope="col">{{__('messages.name')}}</th>
                             <th scope="col">{{__('messages.serviceName')}}</th>
+                            <th scope="col">صوره العرض</th>
                             <th scope="col">{{__('messages.operation')}}</th>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -113,7 +125,9 @@
                             <td>{{$expense -> sponsor_name}}</td>
                             <td>{{$expense -> name}}</td>
                             <td>{{$expense -> service_name}}</td>
+                            <td><img  style="width: 90px; height: 90px;" src="{{asset('Images/Expenses/'.$expense->photo)}}"></td>
                             <td><a href="{{url('input/edit/'.$expense -> id)}}" type="button" class="btn btn-success">{{__('messages.Edit')}}</a></td>
+                            <td><a href="{{route('expense.deleting', $expense -> id)}}" type="button" class="btn btn-danger">{{__('messages.Delete')}}</a></td>
                         </tr>
                         @endforeach
                         </tbody>

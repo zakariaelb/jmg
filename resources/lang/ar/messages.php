@@ -35,7 +35,8 @@ return [
     'Edit' => 'تحديث',
     'editExpense' => 'تحديث مصاريف',
     'Photo' => 'ملف',
-
+    'delete OK' => 'تم الحذف بنجاح',
+    'Delete' => 'حذف',
 
 
 

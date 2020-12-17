@@ -35,6 +35,9 @@ return [
     'Photo' => 'File',
     'save' => 'Save',
     'editExpense' => 'Edit Expense',
+    'delete OK' => 'Deleted successfully',
+    'Delete' => 'Delete',
+
 
 
 ];
