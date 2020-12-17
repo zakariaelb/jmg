@@ -61,7 +61,11 @@ Route::get('/expenses', 'Users\CrudController@getExpenses')->name('expenses');
                 Route::get('edit/{id_Expenses}', 'Users\CrudController@editExpenses')->name('expense.editing')->middleware('auth');
                 Route::post('update/{id_Expenses}', 'Users\CrudController@update')->name('expense.updating')->middleware('auth');
                 Route::get('delete/{id_Expenses}', 'Users\CrudController@delete')->name('expense.deleting')->middleware('auth');
+#######################################Ajax#####################################
+                Route::get('incomes', 'User\UserCrudController@create')->name('incomes.add')->middleware('auth');
+                Route::post('incomes.store', 'User\UserCrudController@store')->name('incomes.store')->middleware('auth');
     });
 });
+
 ######################## Create route ############################
 
