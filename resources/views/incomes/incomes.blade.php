@@ -1,10 +1,11 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
+        <div class="alert alert-success" id="msgDisplay" style="display: none" >{{__('messages.Saved')}}</div>
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
-                    <h6>{{__('messages.AddNewExpense')}}</h6>
+                    <h6>{{__('messages.AddNewIncome')}}</h6>
                 </div>
                 @if(Session::has('success'))
                     <div class="alert alert-success" role="alert">
@@ -12,7 +13,7 @@
                     </div>
                 @endif
                 {{--<form method="post" action="{{url('input\save')}}">--}}
-                <form method="post" action="{{route('expense.saving')}}" enctype="multipart/form-data">
+                <form method="post" action="" id="incomesForm" enctype="multipart/form-data">
                     {{-- <input name="_token" value="{{csrf_token()}}"> --}}
                     @csrf
 
@@ -109,7 +110,7 @@
                     </div>
 
                     <div class="form-check">
-                        <button type="submit" class="btn btn-primary mt-2">{{__('messages.save')}}</button>
+                        <button id="saveBnt" class="btn btn-primary mt-2">{{__('messages.save')}}</button>
                     </div>
                     @if(Session::has('success'))
                         <div class="alert alert-success" role="alert">
@@ -124,17 +125,39 @@
 @stop
 @section("scripts")
     <script>
-        $.ajax({
-            type: 'post',
-            url:'{{route('incomes.store')}}',
-            data: {
-                '': 2,
-            },
-            success: function (data){
-
-            }, error: function (reject){
-            }
+        $(document).on('click', '#saveBnt', function (e){
+            e.preventDefault();
+            var formData = new FormData($('#incomesForm')[0]);
+            $.ajax({
+                type: 'post',
+                enctype: 'multipart/form-data',
+                url:"{{route('incomes.store')}}",
+                data:formData,
+                processData: false,
+                contentType: false,
+                cache: false,
+            {{-- data: {
+                    '_token':"{{csrf_token()}}",
+                    //'photo' => $file_name,
+                    'amount':$("input[name='amount']").val(),
+                    'receipt_voucher_number':$("input[name='receipt_voucher_number']").val(),
+                    'date':$("input[name='date']").val(),
+                    'sponsor_name_English':$("input[name='sponsor_name_English']").val(),
+                    'sponsor_name_Arabic':$("input[name='sponsor_name_Arabic']").val(),
+                    'name_English':$("input[name='name_English']").val(),
+                    'name_Arabic':$("input[name='name_Arabic']").val(),
+                    'service_name_English':$("input[name='service_name_English']").val(),
+                    'service_name_Arabic':$("input[name='service_name_Arabic']").val(),
+                                    },--}}
+                success: function (data){
+                {{-- if(data.status == true)
+                        alert(data.msg)--}}
+                if(data.status == true){
+                    $('#msgDisplay').show();
+                }
+                }, error: function (reject){
+                }
+            });
         });
-
     </script>
     @stop

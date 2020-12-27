@@ -50,7 +50,7 @@ Route::get('/expenses', 'Users\CrudController@getExpenses')->name('expenses');
         Route::group(
             [
                 'prefix' => LaravelLocalization::setLocale(),
-                'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+                'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ],
             ], function() {
             Auth::routes(['verify'=>true]);
             Route::group(['prefix'=>'input'], function() {
@@ -63,7 +63,9 @@ Route::get('/expenses', 'Users\CrudController@getExpenses')->name('expenses');
                 Route::get('delete/{id_Expenses}', 'Users\CrudController@delete')->name('expense.deleting')->middleware('auth');
 #######################################Ajax#####################################
                 Route::get('incomes', 'User\UserCrudController@create')->name('incomes.add')->middleware('auth');
-                Route::post('incomes.store', 'User\UserCrudController@store')->name('incomes.store')->middleware('auth');
+                Route::post('incomes', 'User\UserCrudController@store')->name('incomes.store')->middleware('auth');
+                Route::get('incomesall', 'User\UserCrudController@getAllIncomes')->name('incomes.all')->middleware('auth');
+                route::post('delete','User\UserCrudController@delete')->name('incomes.delete')->middleware('auth');
     });
 });
 

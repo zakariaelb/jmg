@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Income.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_07_111804_create_incomes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/incomes/incomes.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/IncomesRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608719639.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608721190.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608721899.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608814531.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608814546.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608814664.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/incomes/incomesall.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/expenses/allExpenses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/allExpenses.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/incomes/incomes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incomes/incomes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +170,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/incomes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -173,11 +181,11 @@
       <recent name="C:\laragon\www\jmg\app\Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\resources\views\incomes" />
+      <recent name="C:\laragon\www\jmg\app\Http\Requests" />
       <recent name="C:\laragon\www\jmg\app\Models" />
       <recent name="C:\laragon\www\jmg\database\migrations" />
       <recent name="C:\laragon\www\jmg\resources\views\expenses" />
-      <recent name="C:\laragon\www\jmg\app\Traits" />
-      <recent name="C:\laragon\www\jmg\app\Http\Requests" />
     </key>
   </component>
   <component name="RunManager">
@@ -217,7 +225,11 @@
       <workItem from="1608018536774" duration="4134000" />
       <workItem from="1608028462161" duration="5103000" />
       <workItem from="1608100599066" duration="3737000" />
-      <workItem from="1608186560611" duration="12938000" />
+      <workItem from="1608186560611" duration="14030000" />
+      <workItem from="1608622729725" duration="7042000" />
+      <workItem from="1608716377504" duration="9471000" />
+      <workItem from="1608811467294" duration="1978000" />
+      <workItem from="1609051097997" duration="6174000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1605447181813</created>
@@ -261,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608214984225</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="incomes">
+      <created>1608223362712</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608223362712</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,21 +307,22 @@
     <MESSAGE value="ar" />
     <MESSAGE value="image" />
     <MESSAGE value="photo" />
-    <option name="LAST_COMMIT_MESSAGE" value="photo" />
+    <MESSAGE value="incomes" />
+    <option name="LAST_COMMIT_MESSAGE" value="incomes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1692" y="105" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608038809750">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1692" y="105" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608038809750" />
-    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605781908854">
+    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608729065360">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605781908854" />
-    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1608214979881">
+    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608729065360" />
+    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1608223359301">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608214979881" />
+    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608223359301" />
     <state x="1495" y="55" key="DiffContextDialog" timestamp="1605446834534">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -339,18 +359,18 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607856714196" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608214985690">
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608223363903">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608214985690" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608223363903" />
     <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608021948370">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608021948370" />
-    <state x="1705" y="162" key="run.anything.popup" timestamp="1608214872349">
+    <state x="1705" y="162" key="run.anything.popup" timestamp="1609053578916">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608214872349" />
+    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609053578916" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -359,11 +379,6 @@
           <url>file://$PROJECT_DIR$/resources/views/emails/mailuser.blade.php</url>
           <line>2</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/incomes/incomes.blade.php</url>
-          <line>3</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

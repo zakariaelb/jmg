@@ -37,7 +37,9 @@ return [
     'editExpense' => 'Edit Expense',
     'delete OK' => 'Deleted successfully',
     'Delete' => 'Delete',
-
+    'picture' => 'Picture',
+    'AddNewIncome' => 'New Income',
+    'Saved' => 'Saved'
 
 
 ];

@@ -37,7 +37,8 @@ return [
     'Photo' => 'ملف',
     'delete OK' => 'تم الحذف بنجاح',
     'Delete' => 'حذف',
-
-
+    'picture' => 'صورة'
+    'AddNewIncome' => 'دخل جديد',
+    'Saved' => 'تم الحفظ',
 
 ];

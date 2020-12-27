@@ -110,7 +110,7 @@
                             <th scope="col">{{__('messages.sponsorName')}}</th>
                             <th scope="col">{{__('messages.name')}}</th>
                             <th scope="col">{{__('messages.serviceName')}}</th>
-                            <th scope="col">صوره العرض</th>
+                            <th scope="col">{{__('messages.picture')}}</th>
                             <th scope="col">{{__('messages.operation')}}</th>
 
                         </tr>
