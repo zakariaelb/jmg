@@ -27,7 +27,7 @@
                 <td>{{$income -> name}}</td>
                 <td>{{$income -> service_name}}</td>
                 <td><img  style="width: 90px; height: 90px;" src="{{asset('Images/Incomes/'.$income->photo)}}"></td>
-                <td><a href="{{url('input/edit/'.$income -> id)}}" type="button" class="btn btn-success">{{__('messages.Edit')}}</a></td>
+                <td><a href="{{route('incomes.editing',$income -> id)}}" class="btn btn-success">{{__('messages.Edit')}}</a></td>
                 <td><a href="" dataId="{{$income -> id}}" class="btnDelete btn btn-danger"" type="button">{{__('messages.Delete')}}</a></td>
             </tr>
         @endforeach

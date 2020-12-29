@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\IncomesRequest;
+use App\Http\Requests\updatingRequest;
 use App\Models\Expense;
 use App\Models\Income;
 use App\Traits\ExpensesTrait;
@@ -87,5 +88,66 @@ class UserCrudController extends Controller
             'msg' => 'Deleted',
             'id' => $request -> id
         ]);
+    }
+    public function editIncomes(Request $request)  {
+        $id_Inc =  Income::find($request -> id_Income);
+        if(!$id_Inc)
+            return response() -> json([
+                'status' => false,
+                'msg' => 'Failed',
+            ]);
+        $id_Inc = Income::select('id',
+            'amount',
+            'receipt_voucher_number',
+            'date',
+            'sponsor_name_English',
+            'sponsor_name_Arabic',
+            'name_English',
+            'name_Arabic',
+            'service_name_English',
+            'service_name_Arabic')->find($request -> id_Income);
+        return view('incomes.edit', compact('id_Inc'));
+    }
+    public function update(updateRequest $request, $Inc_ID){
+        //Validation ::
+
+        //Check if record exist
+
+        $id_Ind  = Income::select('id',
+            'amount',
+            'receipt_voucher_number',
+            'created_at',
+            'updated_at',
+            'date',
+            'sponsor_name_English',
+            'sponsor_name_Arabic',
+            'name_English',
+            'name_Arabic',
+            'service_name_English',
+            'service_name_Arabic')-> find($Inc_ID);
+        if(!$id_Ind)
+
+            return response() -> json([
+                'status' => false,
+                'msg' => 'Failed',
+            ]);
+
+        //Update :
+        //$id_Exp -> update($request -> all();
+
+        $id_Ind -> update([
+            'amount' => $request->amount,
+            //'receipt_voucher_number' => $request->receipt_voucher_number,
+            'date' => $request->date,
+            'sponsor_name_English'=> $request->sponsor_name_English,
+            'sponsor_name_Arabic'=> $request->sponsor_name_Arabic,
+            'name_English'=> $request->name_English,
+            'name_Arabic'=> $request->name_Arabic,
+            'service_name_English'=> $request->service_name_English,
+            'service_name_Arabic'=> $request->service_name_Arabic]);
+
+        return response() -> json([
+            'status' => true,
+            'msg' => 'Updated',      ]);
     }
 }

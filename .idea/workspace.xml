@@ -20,20 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/IncomesRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608719639.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608721190.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608721899.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608814531.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608814546.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/Incomes/1608814664.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/incomes/incomesall.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/incomes/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/incomes/incEdit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/expenses/allExpenses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/allExpenses.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/incomes/incomes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incomes/incomes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/incomes/incomesall.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incomes/incomesall.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +220,9 @@
       <workItem from="1608622729725" duration="7042000" />
       <workItem from="1608716377504" duration="9471000" />
       <workItem from="1608811467294" duration="1978000" />
-      <workItem from="1609051097997" duration="6174000" />
+      <workItem from="1609051097997" duration="12403000" />
+      <workItem from="1609142523841" duration="8018000" />
+      <workItem from="1609231533653" duration="7782000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1605447181813</created>
@@ -280,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608223362712</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="incomes">
+      <created>1609060656152</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609060656152</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,14 +315,14 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1692" y="105" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608038809750" />
-    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608729065360">
+    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609149168394">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608729065360" />
-    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1608223359301">
+    <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609149168394" />
+    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1609060652444">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608223359301" />
+    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609060652444" />
     <state x="1495" y="55" key="DiffContextDialog" timestamp="1605446834534">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -359,10 +359,10 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607856714196" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608223363903">
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609061164314">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1608223363903" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609061164314" />
     <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608021948370">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -379,6 +379,11 @@
           <url>file://$PROJECT_DIR$/resources/views/emails/mailuser.blade.php</url>
           <line>2</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/incomes/incomesall.blade.php</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

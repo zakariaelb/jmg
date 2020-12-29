@@ -65,6 +65,8 @@ Route::get('/expenses', 'Users\CrudController@getExpenses')->name('expenses');
                 Route::get('incomes', 'User\UserCrudController@create')->name('incomes.add')->middleware('auth');
                 Route::post('incomes', 'User\UserCrudController@store')->name('incomes.store')->middleware('auth');
                 Route::get('incomesall', 'User\UserCrudController@getAllIncomes')->name('incomes.all')->middleware('auth');
+                Route::get('incomesedit/{id_Income}', 'User\UserCrudController@editIncomes')->name('incomes.editing')->middleware('auth');
+                Route::post('update', 'User\UserCrudController@update')->name('incomes.updating')->middleware('auth');
                 route::post('delete','User\UserCrudController@delete')->name('incomes.delete')->middleware('auth');
     });
 });
