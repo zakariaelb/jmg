@@ -40,5 +40,7 @@ return [
     'picture' => 'صورة'
     'AddNewIncome' => 'دخل جديد',
     'Saved' => 'تم الحفظ',
+    'messages.inUpdated' => 'تم تحديث الدخل',
+    'updateIncome' => 'تم ',
 
 ];

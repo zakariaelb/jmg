@@ -1,19 +1,20 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <div class="alert alert-success" id="msgDisplay" style="display: none" >{{__('messages.Saved')}}</div>
+        <div class="alert alert-success" id="msgDisplay" style="display: none" >{{__('messages.inUpdated')}}</div>
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
                     <h6>{{__('messages.AddNewIncome')}}</h6>
                 </div>
                 {{--<form method="post" action="{{url('input\save')}}">--}}
-                <form method="post" action="" id="incomesFormEditing" enctype="multipart/form-data">
+                <form method="post" action="" id="incomesFormUpdate" enctype="multipart/form-data">
                     {{-- <input name="_token" value="{{csrf_token()}}"> --}}
                     @csrf
+                    <input type="text" STYLE="display: none" name="id_Income" class="form-control" value="{{$id_Inc -> id}}" id="dateID" placeholder="date">
+
                     <div class="form-group">
-                        <label for="InputDate">{{__('messages.Date')}}</label>
-                        <input type="Date" name="date" class="form-control" value="{{$id_Inc -> date}}" id="dateID" placeholder="date">
+                        <input type="Date" name="date" STYLE="display: none" class="form-control" value="{{$id_Inc -> date}}" id="dateID" placeholder="date">
                         @error('date')
                         <small class="form-text text-danger">{{$message}}</small>
                         @enderror
@@ -26,6 +27,7 @@
                             <small class="form-text text-danger">{{$message}}</small>
                             @enderror
                         </div>
+                        <input type="text" style="display: none;" class="form-control" value="{{$id_Inc -> id}}" name="id">
                         <div class="col">
                             <input type="text" name="amount" class="form-control" value="{{$id_Inc -> amount}}"
                                    placeholder="{{__('messages.Amount')}}">
@@ -104,7 +106,7 @@
                     </div>
 
                     <div class="form-check">
-                        <button id="edidBtn" class="btn btn-primary mt-2">{{__('messages.Edit')}}</button>
+                        <button id="UPDATE" class="btn btn-primary mt-2">{{__('messages.Edit')}}</button>
                     </div>
                 </form>
             </div>
@@ -113,9 +115,9 @@
 @stop
 @section("scripts")
     <script>
-        $(document).on('click', '#editBtn', function (e){
+        $(document).on('click', '#UPDATE', function (e){
             e.preventDefault();
-            var formData = new FormData($('#incomesFormEditing')[0]);
+            var formData = new FormData($('#incomesFormUpdate')[0]);
 
             $.ajax({
                 type: 'post',

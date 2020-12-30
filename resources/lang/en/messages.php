@@ -39,7 +39,8 @@ return [
     'Delete' => 'Delete',
     'picture' => 'Picture',
     'AddNewIncome' => 'New Income',
-    'Saved' => 'Saved'
-
+    'Saved' => 'Saved',
+    'inUpdated' => 'Income UPDATED',
+    'updateIncome' => 'Update Income',
 
 ];
