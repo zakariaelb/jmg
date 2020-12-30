@@ -70,6 +70,17 @@ Route::get('/expenses', 'Users\CrudController@getExpenses')->name('expenses');
                 Route::post('delete','User\UserCrudController@delete')->name('incomes.delete')->middleware('auth');
     });
 });
-
-######################## Create route ############################
-
+######################## quards and auth ############################
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ],
+    ], function() {
+Route::group([
+    'middleware' => 'admin', 'auth','prefix' => 'admin',
+        ],
+    function() {
+                route::get('admin','Admin\CustomAuthController@Admin')-> name('Admin') ;
+        route::get('user','Admin\CustomAuthController@user')-> name('user') ;
+    });
+});

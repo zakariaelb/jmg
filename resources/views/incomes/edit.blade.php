@@ -5,7 +5,7 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
-                    <h6>{{__('messages.AddNewIncome')}}</h6>
+                    <h6>{{__('messages.updateIncome')}}</h6>
                 </div>
                 {{--<form method="post" action="{{url('input\save')}}">--}}
                 <form method="post" action="" id="incomesFormUpdate" enctype="multipart/form-data">
