@@ -9,6 +9,7 @@ class CustomAuthController extends Controller
 {
     //
     public function Admin(){
+
         return view('admin.index');
     }
     public function user(){

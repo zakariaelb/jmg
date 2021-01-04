@@ -68,6 +68,8 @@ Route::get('/expenses', 'Users\CrudController@getExpenses')->name('expenses');
                 Route::get('incomesedit/{id_Income}', 'User\UserCrudController@editIncomes')->name('incomes.editing')->middleware('auth');
                 Route::post('incomesupdate', 'User\UserCrudController@update')->name('incomes.updating')->middleware('auth');
                 Route::post('delete','User\UserCrudController@delete')->name('incomes.delete')->middleware('auth');
+                Route::get('pdf', 'Pdf\PdfController@gen') ->name('pdf.gen')->middleware('auth');
+                Route::get('pdfmaker', 'Pdf\PdfController@generate') ->name('pdf.gen')->middleware('auth');
     });
 });
 ######################## quards and auth ############################
@@ -80,7 +82,7 @@ Route::group([
     'middleware' => 'admin', 'auth','prefix' => 'admin',
         ],
     function() {
-                route::get('admin','Admin\CustomAuthController@Admin')-> name('Admin') ;
-        route::get('user','Admin\CustomAuthController@user')-> name('user') ;
+                route::get('admin','Admin\CustomAuthController@Admin')-> name('Admin') ->middleware('auth:admin');
+                route::get('user','Admin\CustomAuthController@user')-> name('user') ->middleware('auth:user');
     });
 });

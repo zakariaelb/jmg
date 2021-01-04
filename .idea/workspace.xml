@@ -20,16 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18389f1-49a8-4935-9571-a1001b05cf4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomAuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Pdf/PdfController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_30_12_000000_create_admins_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1609657573.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Images/Expenses/1609765558.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/mpdf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pdf/invoice.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jmg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jmg.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/incomes/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incomes/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomAuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomAuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/expenses/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/incomes/incomes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incomes/incomes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +47,16 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -151,6 +168,14 @@
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
       <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/setasign/fpdi" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/mpdf/mpdf" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kBqIPUINGMyDPoSmBauvEvAy0T" />
@@ -166,22 +191,23 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Pdf" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\jmg\resources\views\admin\user" />
-      <recent name="C:\laragon\www\jmg\resources\views\admin" />
-      <recent name="C:\laragon\www\jmg\resources\views\incomes" />
-      <recent name="C:\laragon\www\jmg\app\Http\Requests" />
-      <recent name="C:\laragon\www\jmg\app\Models" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\jmg\resources\views\incomes" />
       <recent name="C:\laragon\www\jmg\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\jmg\app\Http\Controllers\Pdf" />
+      <recent name="C:\laragon\www\jmg\app" />
+      <recent name="C:\laragon\www\jmg\database\migrations" />
+      <recent name="C:\laragon\www\jmg\resources\views\admin\user" />
+      <recent name="C:\laragon\www\jmg\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -228,7 +254,10 @@
       <workItem from="1609051097997" duration="12403000" />
       <workItem from="1609142523841" duration="8018000" />
       <workItem from="1609231533653" duration="12486000" />
-      <workItem from="1609309743326" duration="13147000" />
+      <workItem from="1609309743326" duration="16538000" />
+      <workItem from="1609591654254" duration="669000" />
+      <workItem from="1609655425906" duration="15624000" />
+      <workItem from="1609763869478" duration="3816000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1605447181813</created>
@@ -300,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609320187481</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="incomes">
+      <created>1609335827999</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609335827999</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,10 +375,14 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1779" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609149168394" />
-    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1609320184218">
+    <state x="1666" y="0" key="CommitChangelistDialog2" timestamp="1609335825382">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609320184218" />
+    <state x="1666" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609335825382" />
+    <state x="1825" y="276" key="ComposerInitDialogKey" timestamp="1609656095731">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1825" y="276" key="ComposerInitDialogKey/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609656095731" />
     <state x="1495" y="55" key="DiffContextDialog" timestamp="1605446834534">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -367,10 +407,10 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1605433227992" />
-    <state x="1883" y="287" key="NewPhpFileDialog" timestamp="1606226756154">
+    <state x="1883" y="287" key="NewPhpFileDialog" timestamp="1609670849752">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1883" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606226756154" />
+    <state x="1883" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609670849752" />
     <state x="1550" y="9" key="SettingsEditor" timestamp="1607412448460">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -379,18 +419,22 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609318354391" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609320193885">
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609335838526">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609320193885" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609335838526" />
     <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609335816243">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1866" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609335816243" />
-    <state x="1705" y="162" key="run.anything.popup" timestamp="1609329677607">
+    <state x="1705" y="162" key="run.anything.popup" timestamp="1609675705957">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609329677607" />
+    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609675705957" />
+    <state x="1712" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1609671043937">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1712" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1609671043937" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

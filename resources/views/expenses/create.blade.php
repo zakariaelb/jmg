@@ -177,17 +177,19 @@
                         <small class="form-text text-danger">{{$message}}</small>
                         @enderror
                     </div>
-                    <div class="form-horizontal">
-                        {{-- <label for="InputAmountr">{{__('messages.name')}}</label>--}}
+                    {{-- <div class="form-horizontal">
+                        {{-- <label for="InputAmountr">{{__('messages.name')}}</label>
                         <input type="file" name="images[]" class="form-control" id="photoIDTOW" aria-describedby="InputPhoto" placeholder="{{__('messages.Photo')}}" multiple>
                         @error('images')
                         <small class="form-text text-danger">{{$message}}</small>
                         @enderror
-                    </div>
-
+                    </div>--}}
+                    <div class="row no-print">
+                        <div class="col-12">
                     <div class="form-check">
-                    <button type="submit" class="btn btn-primary mt-2"  >{{__('messages.save')}}</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary mt-2"  style="margin-right: 10px">{{__('messages.save')}}</button>
+                        <a href="" @click.prevenr="printme" target="_blank" class="btn btn-secondary mt-2"><i class="fa fa-print"></i>Print</a>
+                    </div>   </div>
                     @if(Session::has('success'))
                         <div class="alert alert-success" role="alert">
                             {{ Session::get('success') }}

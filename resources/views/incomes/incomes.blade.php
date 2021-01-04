@@ -100,13 +100,13 @@
                         <small class="form-text text-danger">{{$message}}</small>
                         @enderror
                     </div>
-                    <div class="form-horizontal">
-                        {{-- <label for="InputAmountr">{{__('messages.name')}}</label>--}}
+                   {{--  <div class="form-horizontal">
+                        {{-- <label for="InputAmountr">{{__('messages.name')}}</label>
                         <input type="file" name="images[]" class="form-control" id="photoIDTOW"
                                aria-describedby="InputPhoto" placeholder="{{__('messages.Photo')}}" multiple>
                         @error('images')
                         <small class="form-text text-danger">{{$message}}</small>
-                        @enderror
+                        @enderror--}}
                     </div>
 
                     <div class="form-check">
